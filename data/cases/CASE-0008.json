@@ -1,0 +1,38 @@
+{
+  "id": "CASE-0008",
+  "reason": "service_not_provided",
+  "amount": 211.95,
+  "currency": "USD",
+  "merchant_name": "NovaByte Software",
+  "customer_id": "CUST-GZRIXA11",
+  "created_at": "2025-07-11T00:00:00",
+  "deadline": "2025-08-10T00:00:00",
+  "artifacts": [
+    {
+      "filename": "CASE-0008_order.json",
+      "artifact_type": "order_record",
+      "content": "{\n  \"order_id\": \"ORD-KH2VLPYS\",\n  \"customer_name\": \"Harper Smith\",\n  \"shipping_address\": \"258 Spruce Court, Greenville\",\n  \"billing_address\": \"258 Spruce Court, Greenville\",\n  \"items\": [\n    {\n      \"name\": \"Product 970\",\n      \"qty\": 1,\n      \"unit_price\": 105.97\n    }\n  ],\n  \"total_amount\": 211.95,\n  \"currency\": \"USD\",\n  \"order_date\": \"2025-06-18T00:00:00\",\n  \"status\": \"confirmed\"\n}"
+    },
+    {
+      "filename": "CASE-0008_payment.json",
+      "artifact_type": "payment_record",
+      "content": "{\n  \"transaction_id\": \"TXN-280XKXWD\",\n  \"order_id\": \"ORD-KH2VLPYS\",\n  \"amount\": 211.95,\n  \"currency\": \"USD\",\n  \"payment_method\": \"debit_card\",\n  \"status\": \"completed\",\n  \"processed_at\": \"2025-06-18T01:00:00\"\n}"
+    },
+    {
+      "filename": "CASE-0008_usage_log.json",
+      "artifact_type": "usage_log",
+      "content": "{\n  \"service_period_start\": \"2025-06-21T00:00:00\",\n  \"service_period_end\": \"2025-07-07T00:00:00\",\n  \"entries\": []\n}"
+    },
+    {
+      "filename": "CASE-0008_chat.txt",
+      "artifact_type": "chat_transcript",
+      "content": "=== Chat Transcript \u2014 Case CASE-0008 ===\n\n[2025-07-11T00:00:00] Harper Smith: I paid for 'Web development project - Phase 1' but the service was never provided.\n[2025-07-11T02:00:00] Support Agent: I understand your concern. Let me check our service records.\n[2025-07-11T03:00:00] Support Agent: Our logs show no activity on your account during the service period.\n\n=== End of Transcript ==="
+    },
+    {
+      "filename": "CASE-0008_policy.md",
+      "artifact_type": "policy_text",
+      "content": "# Delivery & Refund Policy\n\n## Section 3.1 \u2014 Delivery Terms\nAll orders are shipped within 2 business days of payment confirmation.\nEstimated delivery time is 5-10 business days from dispatch.\nSignature may be required for orders over $100.\n\n## Section 4.2 \u2014 Dispute Resolution\nCustomers must report non-receipt within 30 days of expected delivery.\nRefund requests for services must be filed within 14 days of service date.\n\n## Section 5.1 \u2014 Refund Policy\nFull refunds are processed within 5-7 business days of approval.\nPartial refunds may be issued for partially delivered services.\nDuplicate charges are refunded automatically upon verification.\n"
+    }
+  ],
+  "merchant_error": true
+}

@@ -1,0 +1,30 @@
+{
+  "case_id": "CASE-0029",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-ZTKKFZZG for $498.67"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-NI92IRMU for $498.67"
+    },
+    {
+      "type": "courier_event",
+      "description": "Dispatch on 2025-09-02"
+    },
+    {
+      "type": "courier_event",
+      "description": "Delivery on 2025-10-05"
+    },
+    {
+      "type": "completion_notice",
+      "description": "Delivery completed"
+    }
+  ],
+  "seeded_contradiction_ids": [
+    "C6"
+  ],
+  "expected_recommendation": "escalate",
+  "merchant_error": false
+}

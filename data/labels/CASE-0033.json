@@ -1,0 +1,30 @@
+{
+  "case_id": "CASE-0033",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-ZSU9RN8Q for $214.03"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-TTY5Y2JR for $214.03"
+    },
+    {
+      "type": "courier_event",
+      "description": "Dispatch on 2025-05-01"
+    },
+    {
+      "type": "courier_event",
+      "description": "Delivery on 2025-05-04"
+    },
+    {
+      "type": "completion_notice",
+      "description": "Delivery completed"
+    }
+  ],
+  "seeded_contradiction_ids": [
+    "C2"
+  ],
+  "expected_recommendation": "escalate",
+  "merchant_error": false
+}

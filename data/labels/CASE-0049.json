@@ -1,0 +1,28 @@
+{
+  "case_id": "CASE-0049",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-SS0KB68R for $426.23"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-ERVT997E for $426.23"
+    },
+    {
+      "type": "courier_event",
+      "description": "Dispatch on 2025-01-31"
+    },
+    {
+      "type": "courier_event",
+      "description": "Delivery on 2025-02-05"
+    },
+    {
+      "type": "completion_notice",
+      "description": "Delivery completed"
+    }
+  ],
+  "seeded_contradiction_ids": [],
+  "expected_recommendation": "challenge",
+  "merchant_error": false
+}

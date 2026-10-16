@@ -1,0 +1,22 @@
+# Illustrative defaults for economics engine.
+# These are NOT based on real merchant data.
+economics:
+  handling_cost: 15.00       # USD cost to prepare a dispute response
+  dispute_fee: 25.00         # USD chargeback fee from processor
+  challenge_threshold: 10.00 # net_ev must exceed this to recommend challenge
+  min_evidence_strength: 0.4 # minimum evidence strength to challenge
+  min_preparation_hours: 4   # below this, add a deadline warning
+  currency: USD
+
+# Triage urgency multipliers
+triage:
+  urgency_high: 2.0    # < 24 hours left
+  urgency_medium: 1.5  # 24-72 hours left
+  urgency_low: 1.0     # > 72 hours left
+  effort_hours: 1.0    # estimated hours per dispute
+
+# Contradiction severity penalties applied to p_win_estimate
+contradiction_penalties:
+  high: 0.25
+  medium: 0.10
+  low: 0.05

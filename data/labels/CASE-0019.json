@@ -1,0 +1,27 @@
+{
+  "case_id": "CASE-0019",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-QY08P0FO"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-DRO8BNP8"
+    },
+    {
+      "type": "usage_log",
+      "description": "Has activity"
+    },
+    {
+      "type": "completion_notice",
+      "description": "Service completed"
+    }
+  ],
+  "seeded_contradiction_ids": [
+    "C4",
+    "C6"
+  ],
+  "expected_recommendation": "escalate",
+  "merchant_error": false
+}

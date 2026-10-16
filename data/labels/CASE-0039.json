@@ -1,0 +1,20 @@
+{
+  "case_id": "CASE-0039",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-LB50ATVZ for $384.39"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-KHIUIT7M for $384.39"
+    },
+    {
+      "type": "courier_event",
+      "description": "Dispatch on 2025-09-15"
+    }
+  ],
+  "seeded_contradiction_ids": [],
+  "expected_recommendation": "accept",
+  "merchant_error": true
+}

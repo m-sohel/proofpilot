@@ -1,0 +1,21 @@
+{
+  "reason": "product_not_received",
+  "display_name": "Product Not Received",
+  "description": "Customer claims they did not receive the product.",
+  "required_evidence": [
+    {"type": "order", "description": "Original order record with shipping address", "weight": 0.20},
+    {"type": "payment", "description": "Payment confirmation", "weight": 0.10},
+    {"type": "courier_event", "description": "Delivery confirmation with signature or photo", "weight": 0.30},
+    {"type": "courier_event", "description": "Shipping/tracking record showing dispatch", "weight": 0.15},
+    {"type": "chat_message", "description": "Customer communication acknowledging delivery or address", "weight": 0.10},
+    {"type": "policy_clause", "description": "Delivery policy terms accepted by customer", "weight": 0.05},
+    {"type": "completion_notice", "description": "Delivery completion notice from carrier", "weight": 0.10}
+  ],
+  "known_failure_modes": [
+    "Delivery confirmation is for a different address than the order",
+    "Tracking shows 'delivered' but no signature proof",
+    "Delivery date is before the dispatch date (data error)",
+    "Customer provided alternative address verbally but no written record"
+  ],
+  "applicable_contradiction_rules": ["C1", "C2", "C6"]
+}

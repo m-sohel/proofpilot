@@ -1,0 +1,38 @@
+{
+  "id": "CASE-0034",
+  "reason": "product_not_received",
+  "amount": 132.59,
+  "currency": "USD",
+  "merchant_name": "UrbanStyle Clothing",
+  "customer_id": "CUST-4QGEFQJG",
+  "created_at": "2025-05-28T00:00:00",
+  "deadline": "2025-06-03T00:00:00",
+  "artifacts": [
+    {
+      "filename": "CASE-0034_order.json",
+      "artifact_type": "order_record",
+      "content": "{\n  \"order_id\": \"ORD-WBOZD1AT\",\n  \"customer_name\": \"River White\",\n  \"shipping_address\": \"369 Ash Place, Fairview\",\n  \"billing_address\": \"369 Ash Place, Fairview\",\n  \"items\": [\n    {\n      \"name\": \"Product 209\",\n      \"qty\": 2,\n      \"unit_price\": 66.3\n    }\n  ],\n  \"total_amount\": 132.59,\n  \"currency\": \"USD\",\n  \"order_date\": \"2025-05-17T00:00:00\",\n  \"status\": \"confirmed\"\n}"
+    },
+    {
+      "filename": "CASE-0034_payment.json",
+      "artifact_type": "payment_record",
+      "content": "{\n  \"transaction_id\": \"TXN-7O75RH8L\",\n  \"order_id\": \"ORD-WBOZD1AT\",\n  \"amount\": 132.59,\n  \"currency\": \"USD\",\n  \"payment_method\": \"debit_card\",\n  \"status\": \"completed\",\n  \"processed_at\": \"2025-05-17T03:00:00\"\n}"
+    },
+    {
+      "filename": "CASE-0034_courier_log.json",
+      "artifact_type": "courier_log",
+      "content": "{\n  \"tracking_id\": \"TRK-X6DUT076G5G7\",\n  \"carrier\": \"ReliableRoute Delivery\",\n  \"destination_address\": \"369 Ash Place, Fairview\",\n  \"events\": [\n    {\n      \"timestamp\": \"2025-05-19T00:00:00\",\n      \"event\": \"package_dispatched\",\n      \"location\": \"Warehouse A\",\n      \"details\": \"Tracking: TRK-X6DUT076G5G7\"\n    },\n    {\n      \"timestamp\": \"2025-05-20T00:00:00\",\n      \"event\": \"in_transit\",\n      \"location\": \"Sorting Facility\",\n      \"details\": \"Package scanned\"\n    },\n    {\n      \"timestamp\": \"2025-05-23T00:00:00\",\n      \"event\": \"delivery_attempted\",\n      \"location\": \"369 Ash Place, Fairview\",\n      \"details\": \"No one available\"\n    }\n  ]\n}"
+    },
+    {
+      "filename": "CASE-0034_chat.txt",
+      "artifact_type": "chat_transcript",
+      "content": "=== Chat Transcript \u2014 Case CASE-0034 ===\n\n[2025-05-28T00:00:00] River White: Hi, I never received my order ORD-WBOZD1AT. It's been over a week since the expected delivery.\n[2025-05-28T02:00:00] Support Agent: I'm sorry to hear that. Let me check tracking TRK-X6DUT076G5G7 for you.\n[2025-05-28T03:00:00] Support Agent: Our records show the package was not yet delivered.\n[2025-05-28T04:00:00] River White: I'm at 369 Ash Place, Fairview and I definitely did not receive anything.\n\n=== End of Transcript ==="
+    },
+    {
+      "filename": "CASE-0034_policy.md",
+      "artifact_type": "policy_text",
+      "content": "# Delivery & Refund Policy\n\n## Section 3.1 \u2014 Delivery Terms\nAll orders are shipped within 2 business days of payment confirmation.\nEstimated delivery time is 5-10 business days from dispatch.\nSignature may be required for orders over $100.\n\n## Section 4.2 \u2014 Dispute Resolution\nCustomers must report non-receipt within 30 days of expected delivery.\nRefund requests for services must be filed within 14 days of service date.\n\n## Section 5.1 \u2014 Refund Policy\nFull refunds are processed within 5-7 business days of approval.\nPartial refunds may be issued for partially delivered services.\nDuplicate charges are refunded automatically upon verification.\n"
+    }
+  ],
+  "merchant_error": false
+}

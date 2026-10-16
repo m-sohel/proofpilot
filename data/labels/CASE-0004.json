@@ -1,0 +1,28 @@
+{
+  "case_id": "CASE-0004",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-R23GDPPQ for $79.17"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-0Y9DOM5I for $79.17"
+    },
+    {
+      "type": "courier_event",
+      "description": "Dispatch on 2025-10-19"
+    },
+    {
+      "type": "courier_event",
+      "description": "Delivery on 2025-10-23"
+    },
+    {
+      "type": "completion_notice",
+      "description": "Delivery completed"
+    }
+  ],
+  "seeded_contradiction_ids": [],
+  "expected_recommendation": "challenge",
+  "merchant_error": false
+}

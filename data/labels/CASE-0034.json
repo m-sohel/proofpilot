@@ -1,0 +1,20 @@
+{
+  "case_id": "CASE-0034",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-WBOZD1AT for $132.59"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-7O75RH8L for $132.59"
+    },
+    {
+      "type": "courier_event",
+      "description": "Dispatch on 2025-05-19"
+    }
+  ],
+  "seeded_contradiction_ids": [],
+  "expected_recommendation": "escalate",
+  "merchant_error": false
+}

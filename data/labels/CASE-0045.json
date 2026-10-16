@@ -1,0 +1,28 @@
+{
+  "case_id": "CASE-0045",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-NOEMQGY2 for $340.29"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-7VYLIENF for $340.29"
+    },
+    {
+      "type": "courier_event",
+      "description": "Dispatch on 2025-06-01"
+    },
+    {
+      "type": "courier_event",
+      "description": "Delivery on 2025-06-04"
+    },
+    {
+      "type": "completion_notice",
+      "description": "Delivery completed"
+    }
+  ],
+  "seeded_contradiction_ids": [],
+  "expected_recommendation": "challenge",
+  "merchant_error": false
+}

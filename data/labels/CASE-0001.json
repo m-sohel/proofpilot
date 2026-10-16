@@ -1,0 +1,22 @@
+{
+  "case_id": "CASE-0001",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-VBDIVUZZ"
+    },
+    {
+      "type": "payment",
+      "description": "Payment 1: TXN-PQK51FPK"
+    },
+    {
+      "type": "payment",
+      "description": "Payment 2: TXN-PQK51FPK"
+    }
+  ],
+  "seeded_contradiction_ids": [
+    "C3"
+  ],
+  "expected_recommendation": "accept",
+  "merchant_error": true
+}

@@ -1,0 +1,20 @@
+{
+  "case_id": "CASE-0018",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-0DK0GET8"
+    },
+    {
+      "type": "payment",
+      "description": "Payment 1: TXN-T63J3R30"
+    },
+    {
+      "type": "payment",
+      "description": "Payment 2: TXN-T63J3R30"
+    }
+  ],
+  "seeded_contradiction_ids": [],
+  "expected_recommendation": "accept",
+  "merchant_error": true
+}

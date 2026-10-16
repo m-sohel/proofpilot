@@ -1,0 +1,20 @@
+{
+  "case_id": "CASE-0021",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-DDP0NEC8"
+    },
+    {
+      "type": "payment",
+      "description": "Payment 1: TXN-UYO57P6B"
+    },
+    {
+      "type": "payment",
+      "description": "Payment 2: TXN-UYO57P6B"
+    }
+  ],
+  "seeded_contradiction_ids": [],
+  "expected_recommendation": "accept",
+  "merchant_error": true
+}

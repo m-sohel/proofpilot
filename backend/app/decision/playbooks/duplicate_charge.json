@@ -1,0 +1,20 @@
+{
+  "reason": "duplicate_charge",
+  "display_name": "Duplicate Charge",
+  "description": "Customer claims they were charged more than once for the same transaction.",
+  "required_evidence": [
+    {"type": "payment", "description": "Original payment record", "weight": 0.25},
+    {"type": "payment", "description": "Second payment record showing different transaction IDs", "weight": 0.25},
+    {"type": "order", "description": "Order record(s) proving separate orders", "weight": 0.20},
+    {"type": "refund", "description": "Refund record if already issued", "weight": 0.15},
+    {"type": "policy_clause", "description": "Billing policy and refund terms", "weight": 0.05},
+    {"type": "chat_message", "description": "Customer communication about the charges", "weight": 0.10}
+  ],
+  "known_failure_modes": [
+    "Both charges have the same transaction ID (true duplicate)",
+    "Refund was already issued but not linked to disputed transaction",
+    "Second charge is a legitimate separate order the customer forgot",
+    "Partial refund was processed but amount doesn't match"
+  ],
+  "applicable_contradiction_rules": ["C3", "C5", "C6"]
+}

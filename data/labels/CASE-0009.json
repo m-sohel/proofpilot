@@ -1,0 +1,28 @@
+{
+  "case_id": "CASE-0009",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-U7EEQTUL for $404.99"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-1P36P6QF for $404.99"
+    },
+    {
+      "type": "courier_event",
+      "description": "Dispatch on 2025-04-16"
+    },
+    {
+      "type": "courier_event",
+      "description": "Delivery on 2025-04-20"
+    },
+    {
+      "type": "completion_notice",
+      "description": "Delivery completed"
+    }
+  ],
+  "seeded_contradiction_ids": [],
+  "expected_recommendation": "challenge",
+  "merchant_error": false
+}

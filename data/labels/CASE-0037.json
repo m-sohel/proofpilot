@@ -1,0 +1,28 @@
+{
+  "case_id": "CASE-0037",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-XMGTT0IA for $197.19"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-AKYTT3IM for $197.19"
+    },
+    {
+      "type": "courier_event",
+      "description": "Dispatch on 2025-07-30"
+    },
+    {
+      "type": "courier_event",
+      "description": "Delivery on 2025-08-07"
+    },
+    {
+      "type": "completion_notice",
+      "description": "Delivery completed"
+    }
+  ],
+  "seeded_contradiction_ids": [],
+  "expected_recommendation": "challenge",
+  "merchant_error": false
+}

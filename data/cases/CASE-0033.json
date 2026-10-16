@@ -1,0 +1,38 @@
+{
+  "id": "CASE-0033",
+  "reason": "product_not_received",
+  "amount": 214.03,
+  "currency": "USD",
+  "merchant_name": "FitGear Sports",
+  "customer_id": "CUST-7X0H3JUJ",
+  "created_at": "2025-05-14T00:00:00",
+  "deadline": "2025-06-09T00:00:00",
+  "artifacts": [
+    {
+      "filename": "CASE-0033_order.json",
+      "artifact_type": "order_record",
+      "content": "{\n  \"order_id\": \"ORD-ZSU9RN8Q\",\n  \"customer_name\": \"Phoenix Wilson\",\n  \"shipping_address\": \"258 Spruce Court, Springfield\",\n  \"billing_address\": \"258 Spruce Court, Springfield\",\n  \"items\": [\n    {\n      \"name\": \"Product 923\",\n      \"qty\": 1,\n      \"unit_price\": 107.02\n    }\n  ],\n  \"total_amount\": 214.03,\n  \"currency\": \"USD\",\n  \"order_date\": \"2025-04-29T00:00:00\",\n  \"status\": \"confirmed\"\n}"
+    },
+    {
+      "filename": "CASE-0033_payment.json",
+      "artifact_type": "payment_record",
+      "content": "{\n  \"transaction_id\": \"TXN-TTY5Y2JR\",\n  \"order_id\": \"ORD-ZSU9RN8Q\",\n  \"amount\": 214.03,\n  \"currency\": \"USD\",\n  \"payment_method\": \"credit_card\",\n  \"status\": \"completed\",\n  \"processed_at\": \"2025-04-29T02:00:00\"\n}"
+    },
+    {
+      "filename": "CASE-0033_courier_log.json",
+      "artifact_type": "courier_log",
+      "content": "{\n  \"tracking_id\": \"TRK-8KK791ZYRRU7\",\n  \"carrier\": \"FastTrack Logistics\",\n  \"destination_address\": \"147 Walnut Way, Madison\",\n  \"events\": [\n    {\n      \"timestamp\": \"2025-05-01T00:00:00\",\n      \"event\": \"package_dispatched\",\n      \"location\": \"Warehouse A\",\n      \"details\": \"Tracking: TRK-8KK791ZYRRU7\"\n    },\n    {\n      \"timestamp\": \"2025-05-02T00:00:00\",\n      \"event\": \"in_transit\",\n      \"location\": \"Sorting Facility\",\n      \"details\": \"Package scanned\"\n    },\n    {\n      \"timestamp\": \"2025-05-04T00:00:00\",\n      \"event\": \"delivered\",\n      \"location\": \"147 Walnut Way, Madison\",\n      \"details\": \"Signed by: Riley Anderson\"\n    }\n  ]\n}"
+    },
+    {
+      "filename": "CASE-0033_chat.txt",
+      "artifact_type": "chat_transcript",
+      "content": "=== Chat Transcript \u2014 Case CASE-0033 ===\n\n[2025-05-14T00:00:00] Phoenix Wilson: Hi, I never received my order ORD-ZSU9RN8Q. It's been over a week since the expected delivery.\n[2025-05-14T02:00:00] Support Agent: I'm sorry to hear that. Let me check tracking TRK-8KK791ZYRRU7 for you.\n[2025-05-14T03:00:00] Support Agent: Our records show the package was delivered to 147 Walnut Way, Madison.\n[2025-05-14T04:00:00] Phoenix Wilson: I'm at 258 Spruce Court, Springfield and I definitely did not receive anything.\n\n=== End of Transcript ==="
+    },
+    {
+      "filename": "CASE-0033_policy.md",
+      "artifact_type": "policy_text",
+      "content": "# Delivery & Refund Policy\n\n## Section 3.1 \u2014 Delivery Terms\nAll orders are shipped within 2 business days of payment confirmation.\nEstimated delivery time is 5-10 business days from dispatch.\nSignature may be required for orders over $100.\n\n## Section 4.2 \u2014 Dispute Resolution\nCustomers must report non-receipt within 30 days of expected delivery.\nRefund requests for services must be filed within 14 days of service date.\n\n## Section 5.1 \u2014 Refund Policy\nFull refunds are processed within 5-7 business days of approval.\nPartial refunds may be issued for partially delivered services.\nDuplicate charges are refunded automatically upon verification.\n"
+    }
+  ],
+  "merchant_error": false
+}

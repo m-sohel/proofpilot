@@ -1,0 +1,24 @@
+{
+  "case_id": "CASE-0044",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-30MM2SMD"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-ZQCBZAMD"
+    },
+    {
+      "type": "usage_log",
+      "description": "Has activity"
+    },
+    {
+      "type": "completion_notice",
+      "description": "Service completed"
+    }
+  ],
+  "seeded_contradiction_ids": [],
+  "expected_recommendation": "challenge",
+  "merchant_error": false
+}

@@ -1,0 +1,20 @@
+{
+  "case_id": "CASE-0006",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-R64DPJA1"
+    },
+    {
+      "type": "payment",
+      "description": "Payment 1: TXN-WJ0TPAC5"
+    },
+    {
+      "type": "payment",
+      "description": "Payment 2: TXN-WJ0TPAC5"
+    }
+  ],
+  "seeded_contradiction_ids": [],
+  "expected_recommendation": "accept",
+  "merchant_error": true
+}

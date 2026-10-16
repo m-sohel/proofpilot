@@ -1,0 +1,20 @@
+{
+  "case_id": "CASE-0028",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-LVPYMB5M"
+    },
+    {
+      "type": "payment",
+      "description": "Payment 1: TXN-9J98CWN2"
+    },
+    {
+      "type": "payment",
+      "description": "Payment 2: TXN-9J98CWN2"
+    }
+  ],
+  "seeded_contradiction_ids": [],
+  "expected_recommendation": "accept",
+  "merchant_error": true
+}

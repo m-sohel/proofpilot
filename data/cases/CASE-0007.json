@@ -1,0 +1,38 @@
+{
+  "id": "CASE-0007",
+  "reason": "product_not_received",
+  "amount": 184.58,
+  "currency": "USD",
+  "merchant_name": "AquaPure Filters",
+  "customer_id": "CUST-LOOKEP7Y",
+  "created_at": "2025-09-22T00:00:00",
+  "deadline": "2025-10-08T00:00:00",
+  "artifacts": [
+    {
+      "filename": "CASE-0007_order.json",
+      "artifact_type": "order_record",
+      "content": "{\n  \"order_id\": \"ORD-AGL58KXO\",\n  \"customer_name\": \"Harper Thomas\",\n  \"shipping_address\": \"321 Elm Drive, Fairview\",\n  \"billing_address\": \"321 Elm Drive, Fairview\",\n  \"items\": [\n    {\n      \"name\": \"Product 438\",\n      \"qty\": 3,\n      \"unit_price\": 92.29\n    }\n  ],\n  \"total_amount\": 184.58,\n  \"currency\": \"USD\",\n  \"order_date\": \"2025-09-07T00:00:00\",\n  \"status\": \"confirmed\"\n}"
+    },
+    {
+      "filename": "CASE-0007_payment.json",
+      "artifact_type": "payment_record",
+      "content": "{\n  \"transaction_id\": \"TXN-9T7E8G8J\",\n  \"order_id\": \"ORD-AGL58KXO\",\n  \"amount\": 184.58,\n  \"currency\": \"USD\",\n  \"payment_method\": \"paypal\",\n  \"status\": \"completed\",\n  \"processed_at\": \"2025-09-07T04:00:00\"\n}"
+    },
+    {
+      "filename": "CASE-0007_courier_log.json",
+      "artifact_type": "courier_log",
+      "content": "{\n  \"tracking_id\": \"TRK-DP0LVSNUJZA7\",\n  \"carrier\": \"SwiftShip Co\",\n  \"destination_address\": \"321 Elm Drive, Fairview\",\n  \"events\": [\n    {\n      \"timestamp\": \"2025-09-10T00:00:00\",\n      \"event\": \"package_dispatched\",\n      \"location\": \"Warehouse A\",\n      \"details\": \"Tracking: TRK-DP0LVSNUJZA7\"\n    },\n    {\n      \"timestamp\": \"2025-09-11T00:00:00\",\n      \"event\": \"in_transit\",\n      \"location\": \"Sorting Facility\",\n      \"details\": \"Package scanned\"\n    },\n    {\n      \"timestamp\": \"2025-09-18T00:00:00\",\n      \"event\": \"delivered\",\n      \"location\": \"321 Elm Drive, Fairview\",\n      \"details\": \"Signed by: Harper Chen\"\n    }\n  ]\n}"
+    },
+    {
+      "filename": "CASE-0007_chat.txt",
+      "artifact_type": "chat_transcript",
+      "content": "=== Chat Transcript \u2014 Case CASE-0007 ===\n\n[2025-09-22T00:00:00] Harper Thomas: Hi, I never received my order ORD-AGL58KXO. It's been over a week since the expected delivery.\n[2025-09-22T02:00:00] Support Agent: I'm sorry to hear that. Let me check tracking TRK-DP0LVSNUJZA7 for you.\n[2025-09-22T03:00:00] Support Agent: Our records show the package was delivered to 321 Elm Drive, Fairview.\n[2025-09-22T04:00:00] Harper Thomas: I'm at 321 Elm Drive, Fairview and I definitely did not receive anything.\n\n=== End of Transcript ==="
+    },
+    {
+      "filename": "CASE-0007_policy.md",
+      "artifact_type": "policy_text",
+      "content": "# Delivery & Refund Policy\n\n## Section 3.1 \u2014 Delivery Terms\nAll orders are shipped within 2 business days of payment confirmation.\nEstimated delivery time is 5-10 business days from dispatch.\nSignature may be required for orders over $100.\n\n## Section 4.2 \u2014 Dispute Resolution\nCustomers must report non-receipt within 30 days of expected delivery.\nRefund requests for services must be filed within 14 days of service date.\n\n## Section 5.1 \u2014 Refund Policy\nFull refunds are processed within 5-7 business days of approval.\nPartial refunds may be issued for partially delivered services.\nDuplicate charges are refunded automatically upon verification.\n"
+    }
+  ],
+  "merchant_error": false
+}

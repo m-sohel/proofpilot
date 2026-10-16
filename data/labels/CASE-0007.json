@@ -1,0 +1,28 @@
+{
+  "case_id": "CASE-0007",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-AGL58KXO for $184.58"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-9T7E8G8J for $184.58"
+    },
+    {
+      "type": "courier_event",
+      "description": "Dispatch on 2025-09-10"
+    },
+    {
+      "type": "courier_event",
+      "description": "Delivery on 2025-09-18"
+    },
+    {
+      "type": "completion_notice",
+      "description": "Delivery completed"
+    }
+  ],
+  "seeded_contradiction_ids": [],
+  "expected_recommendation": "challenge",
+  "merchant_error": false
+}

@@ -1,0 +1,20 @@
+{
+  "case_id": "CASE-0002",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-32OC6UZH for $121.51"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-R5XFF0T0 for $121.51"
+    },
+    {
+      "type": "courier_event",
+      "description": "Dispatch on 2025-10-29"
+    }
+  ],
+  "seeded_contradiction_ids": [],
+  "expected_recommendation": "escalate",
+  "merchant_error": false
+}

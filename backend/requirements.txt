@@ -1,0 +1,18 @@
+# ProofPilot Backend Dependencies
+# Pinned for reproducibility
+
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.1
+httpx==0.28.1
+pyyaml==6.0.2
+python-dotenv==1.0.1
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.25.0
+ruff==0.8.6
+
+# HTTP client for Ollama
+aiohttp==3.11.11

@@ -1,0 +1,28 @@
+{
+  "case_id": "CASE-0047",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-RUJOQW5D for $85.93"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-SK7N8LA1 for $85.93"
+    },
+    {
+      "type": "courier_event",
+      "description": "Dispatch on 2025-05-25"
+    },
+    {
+      "type": "courier_event",
+      "description": "Delivery on 2025-06-01"
+    },
+    {
+      "type": "completion_notice",
+      "description": "Delivery completed"
+    }
+  ],
+  "seeded_contradiction_ids": [],
+  "expected_recommendation": "challenge",
+  "merchant_error": false
+}

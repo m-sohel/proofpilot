@@ -1,0 +1,43 @@
+{
+  "id": "CASE-0041",
+  "reason": "service_not_provided",
+  "amount": 465.5,
+  "currency": "USD",
+  "merchant_name": "CloudStream Media",
+  "customer_id": "CUST-FZW0LDAL",
+  "created_at": "2025-09-03T00:00:00",
+  "deadline": "2025-09-08T00:00:00",
+  "artifacts": [
+    {
+      "filename": "CASE-0041_order.json",
+      "artifact_type": "order_record",
+      "content": "{\n  \"order_id\": \"ORD-UU4YTN02\",\n  \"customer_name\": \"Riley Kumar\",\n  \"shipping_address\": \"258 Spruce Court, Fairview\",\n  \"billing_address\": \"258 Spruce Court, Fairview\",\n  \"items\": [\n    {\n      \"name\": \"Product 464\",\n      \"qty\": 3,\n      \"unit_price\": 232.75\n    }\n  ],\n  \"total_amount\": 465.5,\n  \"currency\": \"USD\",\n  \"order_date\": \"2025-08-06T00:00:00\",\n  \"status\": \"confirmed\"\n}"
+    },
+    {
+      "filename": "CASE-0041_payment.json",
+      "artifact_type": "payment_record",
+      "content": "{\n  \"transaction_id\": \"TXN-YC0MDICV\",\n  \"order_id\": \"ORD-UU4YTN02\",\n  \"amount\": 465.5,\n  \"currency\": \"USD\",\n  \"payment_method\": \"debit_card\",\n  \"status\": \"completed\",\n  \"processed_at\": \"2025-08-06T04:00:00\"\n}"
+    },
+    {
+      "filename": "CASE-0041_usage_log.json",
+      "artifact_type": "usage_log",
+      "content": "{\n  \"service_period_start\": \"2025-08-09T00:00:00\",\n  \"service_period_end\": \"2025-08-28T00:00:00\",\n  \"entries\": [\n    {\n      \"timestamp\": \"2025-08-09T00:00:00\",\n      \"action\": \"query\",\n      \"details\": \"Session 1\"\n    },\n    {\n      \"timestamp\": \"2025-08-10T19:00:00\",\n      \"action\": \"stream\",\n      \"details\": \"Session 2\"\n    },\n    {\n      \"timestamp\": \"2025-08-11T01:00:00\",\n      \"action\": \"query\",\n      \"details\": \"Session 3\"\n    },\n    {\n      \"timestamp\": \"2025-08-11T20:00:00\",\n      \"action\": \"api_call\",\n      \"details\": \"Session 4\"\n    }\n  ]\n}"
+    },
+    {
+      "filename": "CASE-0041_chat.txt",
+      "artifact_type": "chat_transcript",
+      "content": "=== Chat Transcript \u2014 Case CASE-0041 ===\n\n[2025-09-03T00:00:00] Riley Kumar: I paid for 'Cloud hosting - Standard plan' but the service was never provided.\n[2025-09-03T02:00:00] Support Agent: I understand your concern. Let me check our service records.\n[2025-09-03T03:00:00] Support Agent: Our logs show some activity on your account during the service period.\n\n=== End of Transcript ==="
+    },
+    {
+      "filename": "CASE-0041_policy.md",
+      "artifact_type": "policy_text",
+      "content": "# Delivery & Refund Policy\n\n## Section 3.1 \u2014 Delivery Terms\nAll orders are shipped within 2 business days of payment confirmation.\nEstimated delivery time is 5-10 business days from dispatch.\nSignature may be required for orders over $100.\n\n## Section 4.2 \u2014 Dispute Resolution\nCustomers must report non-receipt within 30 days of expected delivery.\nRefund requests for services must be filed within 14 days of service date.\n\n## Section 5.1 \u2014 Refund Policy\nFull refunds are processed within 5-7 business days of approval.\nPartial refunds may be issued for partially delivered services.\nDuplicate charges are refunded automatically upon verification.\n"
+    },
+    {
+      "filename": "CASE-0041_completion.json",
+      "artifact_type": "completion_notice",
+      "content": "{\n  \"completion_date\": \"2025-08-28T00:00:00\",\n  \"service_description\": \"Cloud hosting - Standard plan\",\n  \"status\": \"completed\",\n  \"verified_by\": \"Jordan Chen\"\n}"
+    }
+  ],
+  "merchant_error": false
+}

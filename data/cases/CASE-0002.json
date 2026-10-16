@@ -1,0 +1,38 @@
+{
+  "id": "CASE-0002",
+  "reason": "product_not_received",
+  "amount": 121.51,
+  "currency": "USD",
+  "merchant_name": "FitGear Sports",
+  "customer_id": "CUST-EPQ85JSG",
+  "created_at": "2025-11-13T00:00:00",
+  "deadline": "2025-12-04T00:00:00",
+  "artifacts": [
+    {
+      "filename": "CASE-0002_order.json",
+      "artifact_type": "order_record",
+      "content": "{\n  \"order_id\": \"ORD-32OC6UZH\",\n  \"customer_name\": \"Quinn Jackson\",\n  \"shipping_address\": \"123 Oak Street, Fairview\",\n  \"billing_address\": \"123 Oak Street, Fairview\",\n  \"items\": [\n    {\n      \"name\": \"Product 111\",\n      \"qty\": 3,\n      \"unit_price\": 40.5\n    }\n  ],\n  \"total_amount\": 121.51,\n  \"currency\": \"USD\",\n  \"order_date\": \"2025-10-27T00:00:00\",\n  \"status\": \"confirmed\"\n}"
+    },
+    {
+      "filename": "CASE-0002_payment.json",
+      "artifact_type": "payment_record",
+      "content": "{\n  \"transaction_id\": \"TXN-R5XFF0T0\",\n  \"order_id\": \"ORD-32OC6UZH\",\n  \"amount\": 121.51,\n  \"currency\": \"USD\",\n  \"payment_method\": \"credit_card\",\n  \"status\": \"completed\",\n  \"processed_at\": \"2025-10-27T03:00:00\"\n}"
+    },
+    {
+      "filename": "CASE-0002_courier_log.json",
+      "artifact_type": "courier_log",
+      "content": "{\n  \"tracking_id\": \"TRK-PVN9ER14FFYV\",\n  \"carrier\": \"SwiftShip Co\",\n  \"destination_address\": \"123 Oak Street, Fairview\",\n  \"events\": [\n    {\n      \"timestamp\": \"2025-10-29T00:00:00\",\n      \"event\": \"package_dispatched\",\n      \"location\": \"Warehouse A\",\n      \"details\": \"Tracking: TRK-PVN9ER14FFYV\"\n    },\n    {\n      \"timestamp\": \"2025-10-30T00:00:00\",\n      \"event\": \"in_transit\",\n      \"location\": \"Sorting Facility\",\n      \"details\": \"Package scanned\"\n    },\n    {\n      \"timestamp\": \"2025-11-05T00:00:00\",\n      \"event\": \"delivery_attempted\",\n      \"location\": \"123 Oak Street, Fairview\",\n      \"details\": \"No one available\"\n    }\n  ]\n}"
+    },
+    {
+      "filename": "CASE-0002_chat.txt",
+      "artifact_type": "chat_transcript",
+      "content": "=== Chat Transcript \u2014 Case CASE-0002 ===\n\n[2025-11-13T00:00:00] Quinn Jackson: Hi, I never received my order ORD-32OC6UZH. It's been over a week since the expected delivery.\n[2025-11-13T02:00:00] Support Agent: I'm sorry to hear that. Let me check tracking TRK-PVN9ER14FFYV for you.\n[2025-11-13T03:00:00] Support Agent: Our records show the package was not yet delivered.\n[2025-11-13T04:00:00] Quinn Jackson: I'm at 123 Oak Street, Fairview and I definitely did not receive anything.\n\n=== End of Transcript ==="
+    },
+    {
+      "filename": "CASE-0002_policy.md",
+      "artifact_type": "policy_text",
+      "content": "# Delivery & Refund Policy\n\n## Section 3.1 \u2014 Delivery Terms\nAll orders are shipped within 2 business days of payment confirmation.\nEstimated delivery time is 5-10 business days from dispatch.\nSignature may be required for orders over $100.\n\n## Section 4.2 \u2014 Dispute Resolution\nCustomers must report non-receipt within 30 days of expected delivery.\nRefund requests for services must be filed within 14 days of service date.\n\n## Section 5.1 \u2014 Refund Policy\nFull refunds are processed within 5-7 business days of approval.\nPartial refunds may be issued for partially delivered services.\nDuplicate charges are refunded automatically upon verification.\n"
+    }
+  ],
+  "merchant_error": false
+}

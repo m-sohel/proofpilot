@@ -1,0 +1,43 @@
+{
+  "id": "CASE-0038",
+  "reason": "duplicate_charge",
+  "amount": 475.03,
+  "currency": "USD",
+  "merchant_name": "SwiftFix Repairs",
+  "customer_id": "CUST-T1NTMJSR",
+  "created_at": "2025-10-30T08:00:00",
+  "deadline": "2025-11-21T08:00:00",
+  "artifacts": [
+    {
+      "filename": "CASE-0038_order.json",
+      "artifact_type": "order_record",
+      "content": "{\n  \"order_id\": \"ORD-UBMXNSZO\",\n  \"customer_name\": \"Emerson Anderson\",\n  \"shipping_address\": \"789 Pine Road, Burlington\",\n  \"billing_address\": \"789 Pine Road, Burlington\",\n  \"items\": [\n    {\n      \"name\": \"Product 590\",\n      \"qty\": 1,\n      \"unit_price\": 237.51\n    }\n  ],\n  \"total_amount\": 475.03,\n  \"currency\": \"USD\",\n  \"order_date\": \"2025-10-27T00:00:00\",\n  \"status\": \"confirmed\"\n}"
+    },
+    {
+      "filename": "CASE-0038_payment_1.json",
+      "artifact_type": "payment_record",
+      "content": "{\n  \"transaction_id\": \"TXN-KGTII4FQ\",\n  \"order_id\": \"ORD-UBMXNSZO\",\n  \"amount\": 475.03,\n  \"currency\": \"USD\",\n  \"payment_method\": \"debit_card\",\n  \"status\": \"completed\",\n  \"processed_at\": \"2025-10-27T01:00:00\"\n}"
+    },
+    {
+      "filename": "CASE-0038_payment_2.json",
+      "artifact_type": "payment_record",
+      "content": "{\n  \"transaction_id\": \"TXN-COOTNJLC\",\n  \"order_id\": \"ORD-JYV5G10U\",\n  \"amount\": 475.03,\n  \"currency\": \"USD\",\n  \"payment_method\": \"credit_card\",\n  \"status\": \"completed\",\n  \"processed_at\": \"2025-10-27T08:00:00\"\n}"
+    },
+    {
+      "filename": "CASE-0038_chat.txt",
+      "artifact_type": "chat_transcript",
+      "content": "=== Chat Transcript \u2014 Case CASE-0038 ===\n\n[2025-10-30T08:00:00] Emerson Anderson: I was charged twice for order ORD-UBMXNSZO! Transactions TXN-KGTII4FQ and TXN-COOTNJLC.\n[2025-10-30T09:00:00] Support Agent: Let me review both charges for you.\n[2025-10-30T10:00:00] Support Agent: I can see these appear to be two separate orders.\n\n=== End of Transcript ==="
+    },
+    {
+      "filename": "CASE-0038_policy.md",
+      "artifact_type": "policy_text",
+      "content": "# Delivery & Refund Policy\n\n## Section 3.1 \u2014 Delivery Terms\nAll orders are shipped within 2 business days of payment confirmation.\nEstimated delivery time is 5-10 business days from dispatch.\nSignature may be required for orders over $100.\n\n## Section 4.2 \u2014 Dispute Resolution\nCustomers must report non-receipt within 30 days of expected delivery.\nRefund requests for services must be filed within 14 days of service date.\n\n## Section 5.1 \u2014 Refund Policy\nFull refunds are processed within 5-7 business days of approval.\nPartial refunds may be issued for partially delivered services.\nDuplicate charges are refunded automatically upon verification.\n"
+    },
+    {
+      "filename": "CASE-0038_refund.json",
+      "artifact_type": "refund_record",
+      "content": "{\n  \"refund_id\": \"REF-HG0016ZZ\",\n  \"amount\": 475.03,\n  \"currency\": \"USD\",\n  \"status\": \"processed\",\n  \"processed_at\": \"2025-11-03T08:00:00\"\n}"
+    }
+  ],
+  "merchant_error": false
+}

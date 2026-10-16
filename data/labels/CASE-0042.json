@@ -1,0 +1,30 @@
+{
+  "case_id": "CASE-0042",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-DDTV25AO for $224.03"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-20U9ISYG for $224.03"
+    },
+    {
+      "type": "courier_event",
+      "description": "Dispatch on 2025-04-21"
+    },
+    {
+      "type": "courier_event",
+      "description": "Delivery on 2025-04-19"
+    },
+    {
+      "type": "completion_notice",
+      "description": "Delivery completed"
+    }
+  ],
+  "seeded_contradiction_ids": [
+    "C1"
+  ],
+  "expected_recommendation": "escalate",
+  "merchant_error": false
+}

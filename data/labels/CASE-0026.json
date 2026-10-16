@@ -1,0 +1,28 @@
+{
+  "case_id": "CASE-0026",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-6FP8HQMA for $153.26"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-BSI9NB74 for $153.26"
+    },
+    {
+      "type": "courier_event",
+      "description": "Dispatch on 2025-03-22"
+    },
+    {
+      "type": "courier_event",
+      "description": "Delivery on 2025-03-30"
+    },
+    {
+      "type": "completion_notice",
+      "description": "Delivery completed"
+    }
+  ],
+  "seeded_contradiction_ids": [],
+  "expected_recommendation": "challenge",
+  "merchant_error": false
+}

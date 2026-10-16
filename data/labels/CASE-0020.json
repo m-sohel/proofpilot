@@ -1,0 +1,31 @@
+{
+  "case_id": "CASE-0020",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-LGB0S0R2 for $78.92"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-SDS8B25S for $78.92"
+    },
+    {
+      "type": "courier_event",
+      "description": "Dispatch on 2025-01-31"
+    },
+    {
+      "type": "courier_event",
+      "description": "Delivery on 2025-03-17"
+    },
+    {
+      "type": "completion_notice",
+      "description": "Delivery completed"
+    }
+  ],
+  "seeded_contradiction_ids": [
+    "C1",
+    "C6"
+  ],
+  "expected_recommendation": "escalate",
+  "merchant_error": false
+}

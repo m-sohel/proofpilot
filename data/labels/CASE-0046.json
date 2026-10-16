@@ -1,0 +1,28 @@
+{
+  "case_id": "CASE-0046",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-EE13N3BZ for $375.12"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-T9D31K9Q for $375.12"
+    },
+    {
+      "type": "courier_event",
+      "description": "Dispatch on 2025-11-01"
+    },
+    {
+      "type": "courier_event",
+      "description": "Delivery on 2025-11-05"
+    },
+    {
+      "type": "completion_notice",
+      "description": "Delivery completed"
+    }
+  ],
+  "seeded_contradiction_ids": [],
+  "expected_recommendation": "challenge",
+  "merchant_error": false
+}

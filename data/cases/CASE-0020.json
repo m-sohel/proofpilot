@@ -1,0 +1,38 @@
+{
+  "id": "CASE-0020",
+  "reason": "product_not_received",
+  "amount": 78.92,
+  "currency": "USD",
+  "merchant_name": "AquaPure Filters",
+  "customer_id": "CUST-ZHQIMQOD",
+  "created_at": "2025-02-18T00:00:00",
+  "deadline": "2025-03-12T00:00:00",
+  "artifacts": [
+    {
+      "filename": "CASE-0020_order.json",
+      "artifact_type": "order_record",
+      "content": "{\n  \"order_id\": \"ORD-LGB0S0R2\",\n  \"customer_name\": \"Quinn Thomas\",\n  \"shipping_address\": \"321 Elm Drive, Greenville\",\n  \"billing_address\": \"321 Elm Drive, Greenville\",\n  \"items\": [\n    {\n      \"name\": \"Product 564\",\n      \"qty\": 3,\n      \"unit_price\": 26.31\n    }\n  ],\n  \"total_amount\": 78.92,\n  \"currency\": \"USD\",\n  \"order_date\": \"2025-01-28T00:00:00\",\n  \"status\": \"confirmed\"\n}"
+    },
+    {
+      "filename": "CASE-0020_payment.json",
+      "artifact_type": "payment_record",
+      "content": "{\n  \"transaction_id\": \"TXN-SDS8B25S\",\n  \"order_id\": \"ORD-LGB0S0R2\",\n  \"amount\": 78.92,\n  \"currency\": \"USD\",\n  \"payment_method\": \"debit_card\",\n  \"status\": \"completed\",\n  \"processed_at\": \"2025-01-28T02:00:00\"\n}"
+    },
+    {
+      "filename": "CASE-0020_courier_log.json",
+      "artifact_type": "courier_log",
+      "content": "{\n  \"tracking_id\": \"TRK-Q8CROYR6CCVC\",\n  \"carrier\": \"FastTrack Logistics\",\n  \"destination_address\": \"321 Elm Drive, Greenville\",\n  \"events\": [\n    {\n      \"timestamp\": \"2025-01-31T00:00:00\",\n      \"event\": \"package_dispatched\",\n      \"location\": \"Warehouse A\",\n      \"details\": \"Tracking: TRK-Q8CROYR6CCVC\"\n    },\n    {\n      \"timestamp\": \"2025-02-01T00:00:00\",\n      \"event\": \"in_transit\",\n      \"location\": \"Sorting Facility\",\n      \"details\": \"Package scanned\"\n    },\n    {\n      \"timestamp\": \"2025-03-17T00:00:00\",\n      \"event\": \"delivered\",\n      \"location\": \"321 Elm Drive, Greenville\",\n      \"details\": \"Signed by: Jordan Thomas\"\n    }\n  ]\n}"
+    },
+    {
+      "filename": "CASE-0020_chat.txt",
+      "artifact_type": "chat_transcript",
+      "content": "=== Chat Transcript \u2014 Case CASE-0020 ===\n\n[2025-02-18T00:00:00] Quinn Thomas: Hi, I never received my order ORD-LGB0S0R2. It's been over a week since the expected delivery.\n[2025-02-18T02:00:00] Support Agent: I'm sorry to hear that. Let me check tracking TRK-Q8CROYR6CCVC for you.\n[2025-02-18T03:00:00] Support Agent: Our records show the package was delivered to 321 Elm Drive, Greenville.\n[2025-02-18T04:00:00] Quinn Thomas: I'm at 321 Elm Drive, Greenville and I definitely did not receive anything.\n\n=== End of Transcript ==="
+    },
+    {
+      "filename": "CASE-0020_policy.md",
+      "artifact_type": "policy_text",
+      "content": "# Delivery & Refund Policy\n\n## Section 3.1 \u2014 Delivery Terms\nAll orders are shipped within 2 business days of payment confirmation.\nEstimated delivery time is 5-10 business days from dispatch.\nSignature may be required for orders over $100.\n\n## Section 4.2 \u2014 Dispute Resolution\nCustomers must report non-receipt within 30 days of expected delivery.\nRefund requests for services must be filed within 14 days of service date.\n\n## Section 5.1 \u2014 Refund Policy\nFull refunds are processed within 5-7 business days of approval.\nPartial refunds may be issued for partially delivered services.\nDuplicate charges are refunded automatically upon verification.\n"
+    }
+  ],
+  "merchant_error": false
+}

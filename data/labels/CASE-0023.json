@@ -1,0 +1,31 @@
+{
+  "case_id": "CASE-0023",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-OC50H2CW for $226.81"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-TG1M8XFD for $226.81"
+    },
+    {
+      "type": "courier_event",
+      "description": "Dispatch on 2025-03-03"
+    },
+    {
+      "type": "courier_event",
+      "description": "Delivery on 2025-03-29"
+    },
+    {
+      "type": "completion_notice",
+      "description": "Delivery completed"
+    }
+  ],
+  "seeded_contradiction_ids": [
+    "C2",
+    "C6"
+  ],
+  "expected_recommendation": "escalate",
+  "merchant_error": false
+}

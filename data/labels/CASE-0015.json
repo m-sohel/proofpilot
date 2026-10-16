@@ -1,0 +1,23 @@
+{
+  "case_id": "CASE-0015",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-OGN1W1HT for $434.48"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-7PZE9VIF for $434.48"
+    },
+    {
+      "type": "courier_event",
+      "description": "Dispatch on 2025-08-11"
+    }
+  ],
+  "seeded_contradiction_ids": [
+    "C1",
+    "C2"
+  ],
+  "expected_recommendation": "escalate",
+  "merchant_error": false
+}

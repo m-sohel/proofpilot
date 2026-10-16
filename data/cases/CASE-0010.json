@@ -1,0 +1,38 @@
+{
+  "id": "CASE-0010",
+  "reason": "duplicate_charge",
+  "amount": 380.44,
+  "currency": "USD",
+  "merchant_name": "AquaPure Filters",
+  "customer_id": "CUST-B8IC8BBI",
+  "created_at": "2025-06-30T08:00:00",
+  "deadline": "2025-07-17T08:00:00",
+  "artifacts": [
+    {
+      "filename": "CASE-0010_order.json",
+      "artifact_type": "order_record",
+      "content": "{\n  \"order_id\": \"ORD-0TVHHPBM\",\n  \"customer_name\": \"Harper White\",\n  \"shipping_address\": \"147 Walnut Way, Franklin\",\n  \"billing_address\": \"147 Walnut Way, Franklin\",\n  \"items\": [\n    {\n      \"name\": \"Product 531\",\n      \"qty\": 2,\n      \"unit_price\": 380.44\n    }\n  ],\n  \"total_amount\": 380.44,\n  \"currency\": \"USD\",\n  \"order_date\": \"2025-06-16T00:00:00\",\n  \"status\": \"confirmed\"\n}"
+    },
+    {
+      "filename": "CASE-0010_payment_1.json",
+      "artifact_type": "payment_record",
+      "content": "{\n  \"transaction_id\": \"TXN-YOFQEWAO\",\n  \"order_id\": \"ORD-0TVHHPBM\",\n  \"amount\": 380.44,\n  \"currency\": \"USD\",\n  \"payment_method\": \"debit_card\",\n  \"status\": \"completed\",\n  \"processed_at\": \"2025-06-16T01:00:00\"\n}"
+    },
+    {
+      "filename": "CASE-0010_payment_2.json",
+      "artifact_type": "payment_record",
+      "content": "{\n  \"transaction_id\": \"TXN-YOFQEWAO\",\n  \"order_id\": \"ORD-0TVHHPBM\",\n  \"amount\": 380.44,\n  \"currency\": \"USD\",\n  \"payment_method\": \"credit_card\",\n  \"status\": \"completed\",\n  \"processed_at\": \"2025-06-16T08:00:00\"\n}"
+    },
+    {
+      "filename": "CASE-0010_chat.txt",
+      "artifact_type": "chat_transcript",
+      "content": "=== Chat Transcript \u2014 Case CASE-0010 ===\n\n[2025-06-30T08:00:00] Harper White: I was charged twice for order ORD-0TVHHPBM! Transactions TXN-YOFQEWAO and TXN-YOFQEWAO.\n[2025-06-30T09:00:00] Support Agent: Let me review both charges for you.\n[2025-06-30T10:00:00] Support Agent: I can see both charges reference the same order.\n\n=== End of Transcript ==="
+    },
+    {
+      "filename": "CASE-0010_policy.md",
+      "artifact_type": "policy_text",
+      "content": "# Delivery & Refund Policy\n\n## Section 3.1 \u2014 Delivery Terms\nAll orders are shipped within 2 business days of payment confirmation.\nEstimated delivery time is 5-10 business days from dispatch.\nSignature may be required for orders over $100.\n\n## Section 4.2 \u2014 Dispute Resolution\nCustomers must report non-receipt within 30 days of expected delivery.\nRefund requests for services must be filed within 14 days of service date.\n\n## Section 5.1 \u2014 Refund Policy\nFull refunds are processed within 5-7 business days of approval.\nPartial refunds may be issued for partially delivered services.\nDuplicate charges are refunded automatically upon verification.\n"
+    }
+  ],
+  "merchant_error": true
+}

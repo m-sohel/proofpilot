@@ -1,0 +1,22 @@
+{
+  "case_id": "CASE-0050",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-WBXXGAEA"
+    },
+    {
+      "type": "payment",
+      "description": "Payment 1: TXN-RMS3JN05"
+    },
+    {
+      "type": "payment",
+      "description": "Payment 2: TXN-0E6MPSJ9"
+    }
+  ],
+  "seeded_contradiction_ids": [
+    "C3"
+  ],
+  "expected_recommendation": "escalate",
+  "merchant_error": false
+}

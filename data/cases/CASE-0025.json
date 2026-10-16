@@ -1,0 +1,38 @@
+{
+  "id": "CASE-0025",
+  "reason": "duplicate_charge",
+  "amount": 23.84,
+  "currency": "USD",
+  "merchant_name": "PureGlow Cosmetics",
+  "customer_id": "CUST-832EJX5T",
+  "created_at": "2025-07-25T12:00:00",
+  "deadline": "2025-08-23T12:00:00",
+  "artifacts": [
+    {
+      "filename": "CASE-0025_order.json",
+      "artifact_type": "order_record",
+      "content": "{\n  \"order_id\": \"ORD-8RIEC4D1\",\n  \"customer_name\": \"Riley Kumar\",\n  \"shipping_address\": \"321 Elm Drive, Madison\",\n  \"billing_address\": \"321 Elm Drive, Madison\",\n  \"items\": [\n    {\n      \"name\": \"Product 572\",\n      \"qty\": 2,\n      \"unit_price\": 11.92\n    }\n  ],\n  \"total_amount\": 23.84,\n  \"currency\": \"USD\",\n  \"order_date\": \"2025-07-19T00:00:00\",\n  \"status\": \"confirmed\"\n}"
+    },
+    {
+      "filename": "CASE-0025_payment_1.json",
+      "artifact_type": "payment_record",
+      "content": "{\n  \"transaction_id\": \"TXN-45BM1ENF\",\n  \"order_id\": \"ORD-8RIEC4D1\",\n  \"amount\": 23.84,\n  \"currency\": \"USD\",\n  \"payment_method\": \"paypal\",\n  \"status\": \"completed\",\n  \"processed_at\": \"2025-07-19T01:00:00\"\n}"
+    },
+    {
+      "filename": "CASE-0025_payment_2.json",
+      "artifact_type": "payment_record",
+      "content": "{\n  \"transaction_id\": \"TXN-313FPOYI\",\n  \"order_id\": \"ORD-TL3Q4N89\",\n  \"amount\": 23.84,\n  \"currency\": \"USD\",\n  \"payment_method\": \"paypal\",\n  \"status\": \"completed\",\n  \"processed_at\": \"2025-07-19T12:00:00\"\n}"
+    },
+    {
+      "filename": "CASE-0025_chat.txt",
+      "artifact_type": "chat_transcript",
+      "content": "=== Chat Transcript \u2014 Case CASE-0025 ===\n\n[2025-07-25T12:00:00] Riley Kumar: I was charged twice for order ORD-8RIEC4D1! Transactions TXN-45BM1ENF and TXN-313FPOYI.\n[2025-07-25T13:00:00] Support Agent: Let me review both charges for you.\n[2025-07-25T14:00:00] Support Agent: I can see these appear to be two separate orders.\n\n=== End of Transcript ==="
+    },
+    {
+      "filename": "CASE-0025_policy.md",
+      "artifact_type": "policy_text",
+      "content": "# Delivery & Refund Policy\n\n## Section 3.1 \u2014 Delivery Terms\nAll orders are shipped within 2 business days of payment confirmation.\nEstimated delivery time is 5-10 business days from dispatch.\nSignature may be required for orders over $100.\n\n## Section 4.2 \u2014 Dispute Resolution\nCustomers must report non-receipt within 30 days of expected delivery.\nRefund requests for services must be filed within 14 days of service date.\n\n## Section 5.1 \u2014 Refund Policy\nFull refunds are processed within 5-7 business days of approval.\nPartial refunds may be issued for partially delivered services.\nDuplicate charges are refunded automatically upon verification.\n"
+    }
+  ],
+  "merchant_error": false
+}

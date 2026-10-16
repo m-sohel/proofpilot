@@ -1,0 +1,24 @@
+{
+  "case_id": "CASE-0030",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-WTEKTSG7"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-FXZV4U3B"
+    },
+    {
+      "type": "usage_log",
+      "description": "No activity"
+    },
+    {
+      "type": "completion_notice",
+      "description": "Service completed"
+    }
+  ],
+  "seeded_contradiction_ids": [],
+  "expected_recommendation": "escalate",
+  "merchant_error": false
+}

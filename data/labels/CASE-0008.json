@@ -1,0 +1,20 @@
+{
+  "case_id": "CASE-0008",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-KH2VLPYS"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-280XKXWD"
+    },
+    {
+      "type": "usage_log",
+      "description": "No activity"
+    }
+  ],
+  "seeded_contradiction_ids": [],
+  "expected_recommendation": "accept",
+  "merchant_error": true
+}

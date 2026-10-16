@@ -1,0 +1,43 @@
+{
+  "id": "CASE-0044",
+  "reason": "service_not_provided",
+  "amount": 216.75,
+  "currency": "USD",
+  "merchant_name": "TechHaven Electronics",
+  "customer_id": "CUST-ZH13CD5G",
+  "created_at": "2025-07-11T00:00:00",
+  "deadline": "2025-07-21T00:00:00",
+  "artifacts": [
+    {
+      "filename": "CASE-0044_order.json",
+      "artifact_type": "order_record",
+      "content": "{\n  \"order_id\": \"ORD-30MM2SMD\",\n  \"customer_name\": \"Jordan Chen\",\n  \"shipping_address\": \"258 Spruce Court, Fairview\",\n  \"billing_address\": \"258 Spruce Court, Fairview\",\n  \"items\": [\n    {\n      \"name\": \"Product 916\",\n      \"qty\": 2,\n      \"unit_price\": 72.25\n    }\n  ],\n  \"total_amount\": 216.75,\n  \"currency\": \"USD\",\n  \"order_date\": \"2025-06-15T00:00:00\",\n  \"status\": \"confirmed\"\n}"
+    },
+    {
+      "filename": "CASE-0044_payment.json",
+      "artifact_type": "payment_record",
+      "content": "{\n  \"transaction_id\": \"TXN-ZQCBZAMD\",\n  \"order_id\": \"ORD-30MM2SMD\",\n  \"amount\": 216.75,\n  \"currency\": \"USD\",\n  \"payment_method\": \"credit_card\",\n  \"status\": \"completed\",\n  \"processed_at\": \"2025-06-15T01:00:00\"\n}"
+    },
+    {
+      "filename": "CASE-0044_usage_log.json",
+      "artifact_type": "usage_log",
+      "content": "{\n  \"service_period_start\": \"2025-06-18T00:00:00\",\n  \"service_period_end\": \"2025-07-02T00:00:00\",\n  \"entries\": [\n    {\n      \"timestamp\": \"2025-06-18T00:00:00\",\n      \"action\": \"stream\",\n      \"details\": \"Session 1\"\n    },\n    {\n      \"timestamp\": \"2025-06-19T02:00:00\",\n      \"action\": \"login\",\n      \"details\": \"Session 2\"\n    },\n    {\n      \"timestamp\": \"2025-06-21T02:00:00\",\n      \"action\": \"query\",\n      \"details\": \"Session 3\"\n    },\n    {\n      \"timestamp\": \"2025-06-21T15:00:00\",\n      \"action\": \"stream\",\n      \"details\": \"Session 4\"\n    }\n  ]\n}"
+    },
+    {
+      "filename": "CASE-0044_chat.txt",
+      "artifact_type": "chat_transcript",
+      "content": "=== Chat Transcript \u2014 Case CASE-0044 ===\n\n[2025-07-11T00:00:00] Jordan Chen: I paid for 'Cloud hosting - Standard plan' but the service was never provided.\n[2025-07-11T02:00:00] Support Agent: I understand your concern. Let me check our service records.\n[2025-07-11T03:00:00] Support Agent: Our logs show some activity on your account during the service period.\n\n=== End of Transcript ==="
+    },
+    {
+      "filename": "CASE-0044_policy.md",
+      "artifact_type": "policy_text",
+      "content": "# Delivery & Refund Policy\n\n## Section 3.1 \u2014 Delivery Terms\nAll orders are shipped within 2 business days of payment confirmation.\nEstimated delivery time is 5-10 business days from dispatch.\nSignature may be required for orders over $100.\n\n## Section 4.2 \u2014 Dispute Resolution\nCustomers must report non-receipt within 30 days of expected delivery.\nRefund requests for services must be filed within 14 days of service date.\n\n## Section 5.1 \u2014 Refund Policy\nFull refunds are processed within 5-7 business days of approval.\nPartial refunds may be issued for partially delivered services.\nDuplicate charges are refunded automatically upon verification.\n"
+    },
+    {
+      "filename": "CASE-0044_completion.json",
+      "artifact_type": "completion_notice",
+      "content": "{\n  \"completion_date\": \"2025-07-02T00:00:00\",\n  \"service_description\": \"Cloud hosting - Standard plan\",\n  \"status\": \"completed\",\n  \"verified_by\": \"Avery Jones\"\n}"
+    }
+  ],
+  "merchant_error": false
+}

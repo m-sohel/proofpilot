@@ -1,0 +1,43 @@
+{
+  "id": "CASE-0021",
+  "reason": "duplicate_charge",
+  "amount": 477.49,
+  "currency": "USD",
+  "merchant_name": "FitGear Sports",
+  "customer_id": "CUST-A5UOFWB0",
+  "created_at": "2025-07-28T08:00:00",
+  "deadline": "2025-08-26T08:00:00",
+  "artifacts": [
+    {
+      "filename": "CASE-0021_order.json",
+      "artifact_type": "order_record",
+      "content": "{\n  \"order_id\": \"ORD-DDP0NEC8\",\n  \"customer_name\": \"River White\",\n  \"shipping_address\": \"258 Spruce Court, Riverside\",\n  \"billing_address\": \"258 Spruce Court, Riverside\",\n  \"items\": [\n    {\n      \"name\": \"Product 539\",\n      \"qty\": 3,\n      \"unit_price\": 159.16\n    }\n  ],\n  \"total_amount\": 477.49,\n  \"currency\": \"USD\",\n  \"order_date\": \"2025-07-25T00:00:00\",\n  \"status\": \"confirmed\"\n}"
+    },
+    {
+      "filename": "CASE-0021_payment_1.json",
+      "artifact_type": "payment_record",
+      "content": "{\n  \"transaction_id\": \"TXN-UYO57P6B\",\n  \"order_id\": \"ORD-DDP0NEC8\",\n  \"amount\": 477.49,\n  \"currency\": \"USD\",\n  \"payment_method\": \"paypal\",\n  \"status\": \"completed\",\n  \"processed_at\": \"2025-07-25T02:00:00\"\n}"
+    },
+    {
+      "filename": "CASE-0021_payment_2.json",
+      "artifact_type": "payment_record",
+      "content": "{\n  \"transaction_id\": \"TXN-UYO57P6B\",\n  \"order_id\": \"ORD-DDP0NEC8\",\n  \"amount\": 477.49,\n  \"currency\": \"USD\",\n  \"payment_method\": \"paypal\",\n  \"status\": \"completed\",\n  \"processed_at\": \"2025-07-25T08:00:00\"\n}"
+    },
+    {
+      "filename": "CASE-0021_chat.txt",
+      "artifact_type": "chat_transcript",
+      "content": "=== Chat Transcript \u2014 Case CASE-0021 ===\n\n[2025-07-28T08:00:00] River White: I was charged twice for order ORD-DDP0NEC8! Transactions TXN-UYO57P6B and TXN-UYO57P6B.\n[2025-07-28T09:00:00] Support Agent: Let me review both charges for you.\n[2025-07-28T10:00:00] Support Agent: I can see both charges reference the same order.\n\n=== End of Transcript ==="
+    },
+    {
+      "filename": "CASE-0021_policy.md",
+      "artifact_type": "policy_text",
+      "content": "# Delivery & Refund Policy\n\n## Section 3.1 \u2014 Delivery Terms\nAll orders are shipped within 2 business days of payment confirmation.\nEstimated delivery time is 5-10 business days from dispatch.\nSignature may be required for orders over $100.\n\n## Section 4.2 \u2014 Dispute Resolution\nCustomers must report non-receipt within 30 days of expected delivery.\nRefund requests for services must be filed within 14 days of service date.\n\n## Section 5.1 \u2014 Refund Policy\nFull refunds are processed within 5-7 business days of approval.\nPartial refunds may be issued for partially delivered services.\nDuplicate charges are refunded automatically upon verification.\n"
+    },
+    {
+      "filename": "CASE-0021_refund.json",
+      "artifact_type": "refund_record",
+      "content": "{\n  \"refund_id\": \"REF-XA73JGZL\",\n  \"amount\": 477.49,\n  \"currency\": \"USD\",\n  \"status\": \"processed\",\n  \"processed_at\": \"2025-07-31T08:00:00\",\n  \"original_transaction_id\": \"TXN-UYO57P6B\"\n}"
+    }
+  ],
+  "merchant_error": true
+}

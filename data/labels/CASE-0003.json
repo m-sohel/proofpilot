@@ -1,0 +1,24 @@
+{
+  "case_id": "CASE-0003",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-HNF877VR"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-EN93IIUC"
+    },
+    {
+      "type": "usage_log",
+      "description": "Has activity"
+    },
+    {
+      "type": "completion_notice",
+      "description": "Service completed"
+    }
+  ],
+  "seeded_contradiction_ids": [],
+  "expected_recommendation": "challenge",
+  "merchant_error": false
+}

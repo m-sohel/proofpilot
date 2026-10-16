@@ -1,0 +1,38 @@
+{
+  "id": "CASE-0045",
+  "reason": "product_not_received",
+  "amount": 340.29,
+  "currency": "USD",
+  "merchant_name": "PureGlow Cosmetics",
+  "customer_id": "CUST-ZPGU2HBI",
+  "created_at": "2025-06-10T00:00:00",
+  "deadline": "2025-06-15T00:00:00",
+  "artifacts": [
+    {
+      "filename": "CASE-0045_order.json",
+      "artifact_type": "order_record",
+      "content": "{\n  \"order_id\": \"ORD-NOEMQGY2\",\n  \"customer_name\": \"Blake Davis\",\n  \"shipping_address\": \"987 Birch Boulevard, Greenville\",\n  \"billing_address\": \"987 Birch Boulevard, Greenville\",\n  \"items\": [\n    {\n      \"name\": \"Product 493\",\n      \"qty\": 3,\n      \"unit_price\": 113.43\n    }\n  ],\n  \"total_amount\": 340.29,\n  \"currency\": \"USD\",\n  \"order_date\": \"2025-05-29T00:00:00\",\n  \"status\": \"confirmed\"\n}"
+    },
+    {
+      "filename": "CASE-0045_payment.json",
+      "artifact_type": "payment_record",
+      "content": "{\n  \"transaction_id\": \"TXN-7VYLIENF\",\n  \"order_id\": \"ORD-NOEMQGY2\",\n  \"amount\": 340.29,\n  \"currency\": \"USD\",\n  \"payment_method\": \"paypal\",\n  \"status\": \"completed\",\n  \"processed_at\": \"2025-05-29T03:00:00\"\n}"
+    },
+    {
+      "filename": "CASE-0045_courier_log.json",
+      "artifact_type": "courier_log",
+      "content": "{\n  \"tracking_id\": \"TRK-NVUPRT77GGKG\",\n  \"carrier\": \"ReliableRoute Delivery\",\n  \"destination_address\": \"987 Birch Boulevard, Greenville\",\n  \"events\": [\n    {\n      \"timestamp\": \"2025-06-01T00:00:00\",\n      \"event\": \"package_dispatched\",\n      \"location\": \"Warehouse A\",\n      \"details\": \"Tracking: TRK-NVUPRT77GGKG\"\n    },\n    {\n      \"timestamp\": \"2025-06-02T00:00:00\",\n      \"event\": \"in_transit\",\n      \"location\": \"Sorting Facility\",\n      \"details\": \"Package scanned\"\n    },\n    {\n      \"timestamp\": \"2025-06-04T00:00:00\",\n      \"event\": \"delivered\",\n      \"location\": \"987 Birch Boulevard, Greenville\",\n      \"details\": \"Signed by: Blake Jones\"\n    }\n  ]\n}"
+    },
+    {
+      "filename": "CASE-0045_chat.txt",
+      "artifact_type": "chat_transcript",
+      "content": "=== Chat Transcript \u2014 Case CASE-0045 ===\n\n[2025-06-10T00:00:00] Blake Davis: Hi, I never received my order ORD-NOEMQGY2. It's been over a week since the expected delivery.\n[2025-06-10T02:00:00] Support Agent: I'm sorry to hear that. Let me check tracking TRK-NVUPRT77GGKG for you.\n[2025-06-10T03:00:00] Support Agent: Our records show the package was delivered to 987 Birch Boulevard, Greenville.\n[2025-06-10T04:00:00] Blake Davis: I'm at 987 Birch Boulevard, Greenville and I definitely did not receive anything.\n\n=== End of Transcript ==="
+    },
+    {
+      "filename": "CASE-0045_policy.md",
+      "artifact_type": "policy_text",
+      "content": "# Delivery & Refund Policy\n\n## Section 3.1 \u2014 Delivery Terms\nAll orders are shipped within 2 business days of payment confirmation.\nEstimated delivery time is 5-10 business days from dispatch.\nSignature may be required for orders over $100.\n\n## Section 4.2 \u2014 Dispute Resolution\nCustomers must report non-receipt within 30 days of expected delivery.\nRefund requests for services must be filed within 14 days of service date.\n\n## Section 5.1 \u2014 Refund Policy\nFull refunds are processed within 5-7 business days of approval.\nPartial refunds may be issued for partially delivered services.\nDuplicate charges are refunded automatically upon verification.\n"
+    }
+  ],
+  "merchant_error": false
+}

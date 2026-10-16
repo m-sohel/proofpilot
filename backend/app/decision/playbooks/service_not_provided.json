@@ -1,0 +1,21 @@
+{
+  "reason": "service_not_provided",
+  "display_name": "Service Not Provided",
+  "description": "Customer claims the service they paid for was not delivered.",
+  "required_evidence": [
+    {"type": "order", "description": "Service order/booking record", "weight": 0.15},
+    {"type": "payment", "description": "Payment confirmation for the service", "weight": 0.10},
+    {"type": "usage_log", "description": "Service usage or access logs", "weight": 0.25},
+    {"type": "completion_notice", "description": "Service completion confirmation", "weight": 0.25},
+    {"type": "chat_message", "description": "Customer communication about service delivery", "weight": 0.10},
+    {"type": "policy_clause", "description": "Service terms and conditions", "weight": 0.05},
+    {"type": "refund", "description": "Any prior refund or credit issued", "weight": 0.10}
+  ],
+  "known_failure_modes": [
+    "Completion notice timestamp is before the service period ended",
+    "Usage logs show zero activity despite completion claim",
+    "Service was partially delivered but merchant claims full delivery",
+    "Customer cancelled but cancellation was not processed"
+  ],
+  "applicable_contradiction_rules": ["C4", "C6"]
+}

@@ -1,0 +1,31 @@
+{
+  "case_id": "CASE-0014",
+  "expected_facts": [
+    {
+      "type": "order",
+      "description": "Order ORD-PTX63CFL for $348.38"
+    },
+    {
+      "type": "payment",
+      "description": "Payment TXN-0UKEYZ7S for $348.38"
+    },
+    {
+      "type": "courier_event",
+      "description": "Dispatch on 2025-02-23"
+    },
+    {
+      "type": "courier_event",
+      "description": "Delivery on 2025-03-23"
+    },
+    {
+      "type": "completion_notice",
+      "description": "Delivery completed"
+    }
+  ],
+  "seeded_contradiction_ids": [
+    "C2",
+    "C6"
+  ],
+  "expected_recommendation": "escalate",
+  "merchant_error": false
+}

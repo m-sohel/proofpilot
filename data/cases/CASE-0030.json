@@ -1,0 +1,43 @@
+{
+  "id": "CASE-0030",
+  "reason": "service_not_provided",
+  "amount": 425.28,
+  "currency": "USD",
+  "merchant_name": "SwiftFix Repairs",
+  "customer_id": "CUST-2YKCCPRH",
+  "created_at": "2025-07-12T00:00:00",
+  "deadline": "2025-08-06T00:00:00",
+  "artifacts": [
+    {
+      "filename": "CASE-0030_order.json",
+      "artifact_type": "order_record",
+      "content": "{\n  \"order_id\": \"ORD-WTEKTSG7\",\n  \"customer_name\": \"Riley Garcia\",\n  \"shipping_address\": \"123 Oak Street, Clinton\",\n  \"billing_address\": \"123 Oak Street, Clinton\",\n  \"items\": [\n    {\n      \"name\": \"Product 742\",\n      \"qty\": 3,\n      \"unit_price\": 212.64\n    }\n  ],\n  \"total_amount\": 425.28,\n  \"currency\": \"USD\",\n  \"order_date\": \"2025-06-09T00:00:00\",\n  \"status\": \"confirmed\"\n}"
+    },
+    {
+      "filename": "CASE-0030_payment.json",
+      "artifact_type": "payment_record",
+      "content": "{\n  \"transaction_id\": \"TXN-FXZV4U3B\",\n  \"order_id\": \"ORD-WTEKTSG7\",\n  \"amount\": 425.28,\n  \"currency\": \"USD\",\n  \"payment_method\": \"paypal\",\n  \"status\": \"completed\",\n  \"processed_at\": \"2025-06-09T00:00:00\"\n}"
+    },
+    {
+      "filename": "CASE-0030_usage_log.json",
+      "artifact_type": "usage_log",
+      "content": "{\n  \"service_period_start\": \"2025-06-12T00:00:00\",\n  \"service_period_end\": \"2025-07-07T00:00:00\",\n  \"entries\": []\n}"
+    },
+    {
+      "filename": "CASE-0030_chat.txt",
+      "artifact_type": "chat_transcript",
+      "content": "=== Chat Transcript \u2014 Case CASE-0030 ===\n\n[2025-07-12T00:00:00] Riley Garcia: I paid for 'Consulting session - 2 hours' but the service was never provided.\n[2025-07-12T02:00:00] Support Agent: I understand your concern. Let me check our service records.\n[2025-07-12T03:00:00] Support Agent: Our logs show no activity on your account during the service period.\n\n=== End of Transcript ==="
+    },
+    {
+      "filename": "CASE-0030_policy.md",
+      "artifact_type": "policy_text",
+      "content": "# Delivery & Refund Policy\n\n## Section 3.1 \u2014 Delivery Terms\nAll orders are shipped within 2 business days of payment confirmation.\nEstimated delivery time is 5-10 business days from dispatch.\nSignature may be required for orders over $100.\n\n## Section 4.2 \u2014 Dispute Resolution\nCustomers must report non-receipt within 30 days of expected delivery.\nRefund requests for services must be filed within 14 days of service date.\n\n## Section 5.1 \u2014 Refund Policy\nFull refunds are processed within 5-7 business days of approval.\nPartial refunds may be issued for partially delivered services.\nDuplicate charges are refunded automatically upon verification.\n"
+    },
+    {
+      "filename": "CASE-0030_completion.json",
+      "artifact_type": "completion_notice",
+      "content": "{\n  \"completion_date\": \"2025-07-07T00:00:00\",\n  \"service_description\": \"Consulting session - 2 hours\",\n  \"status\": \"completed\",\n  \"verified_by\": \"Riley Miller\"\n}"
+    }
+  ],
+  "merchant_error": false
+}

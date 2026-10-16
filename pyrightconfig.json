@@ -1,0 +1,17 @@
+{
+  "include": [
+    "backend",
+    "eval"
+  ],
+  "extraPaths": [
+    "backend"
+  ],
+  "executionEnvironments": [
+    {
+      "root": ".",
+      "extraPaths": [
+        "backend"
+      ]
+    }
+  ]
+}
