@@ -49,6 +49,10 @@ His ultimate goal is to empower ambitious businesses with digital solutions that
 
 ## 🎓 Education & Technical Foundation
 
+<div align="center" style="margin: 20px 0;">
+  <img src="./kasim-image/qasim-pass-final.png" alt="Kasim Shah Education & Leadership" width="400" style="border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+</div>
+
 Kasim's deep understanding of scalable systems and software architecture is backed by a robust technical education.
 
 | Program | Institution & Affiliation | Timeline | Key Focus & Activities |
