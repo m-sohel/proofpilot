@@ -1,5 +1,5 @@
 # Kasim Shah
-**Co-Founder & Head of Sales | VierLabs**
+**Co-Founder & Head of Business | VierLabs**
 
 <div align="center">
   <img src="./kasim-image/Developer-Photo.png" alt="Kasim Shah" width="300" style="border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
@@ -17,19 +17,19 @@
   <img src="./kasim-image/kasim.png" alt="Kasim Shah Professional" width="400" style="border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
 </div>
 
-Kasim Shah is a dynamic and visionary Co-Founder who drives the sales, client relations, and strategic scaling at **VierLabs**. Operating at the rare intersection of high-level business strategy and deep technical architecture, Kasim is uniquely positioned to translate complex technical jargon into compelling business value. He has established himself as a trusted advisor to elite clientele, global brands, and high-end creative agencies who demand perfection.
+Kasim Shah is a dynamic and visionary Co-Founder & Head of Business who drives business growth, client relations, and strategic scaling at **VierLabs**. Operating at the rare intersection of high-level business strategy and deep technical architecture, Kasim is uniquely positioned to translate complex technical jargon into compelling business value. He has established himself as a trusted advisor to elite clientele, global brands, and high-end creative agencies who demand perfection.
 
 At VierLabs, he doesn't just sell software or websites; he engineers long-term, highly strategic partnerships. He operates with the conviction that the foundation of any groundbreaking digital product is not simply the underlying code, but a profound understanding of a client's market positioning, their target audience, and their most ambitious ultimate goals.
 
 ### 📈 Professional Journey & Leadership
 
-Kasim's journey began with a deep-rooted passion for software engineering, specifically in the MERN stack ecosystem. As he progressed, he realized that the best technical solutions were often lost in translation when communicated to business stakeholders. This realization became the catalyst for his transition into technical sales and strategy. 
+Kasim's journey began with a deep-rooted passion for software engineering, specifically in the MERN stack ecosystem. As he progressed, he realized that the best technical solutions were often lost in translation when communicated to business stakeholders. This realization became the catalyst for his transition into business development and strategy. 
 
 Today, he leads the charge at VierLabs by orchestrating the entire client lifecycle—from initial discovery and negotiation to strategic project roadmapping. His leadership ensures that the engineering and design teams have absolute clarity, resulting in products that not only look cinematic but also convert aggressively, scale effortlessly, and dominate the market.
 
 ### 🛠️ Technical Arsenal & Core Competencies
 
-Unlike traditional sales leaders, Kasim brings a robust, hands-on technical background to the table. This allows him to architect solutions on the fly during client meetings and accurately scope projects without needing immediate developer intervention.
+Unlike traditional business leaders, Kasim brings a robust, hands-on technical background to the table. This allows him to architect solutions on the fly during client meetings and accurately scope projects without needing immediate developer intervention.
 
 - **Full-Stack Proficiency:** Deep understanding of the MERN Stack (MongoDB, Express.js, React.js, Node.js), Next.js, and modern frontend ecosystems.
 - **Strategic Client Acquisition:** Identifying, negotiating, and onboarding high-value partners who align with VierLabs' commitment to uncompromising, luxury-level quality.
